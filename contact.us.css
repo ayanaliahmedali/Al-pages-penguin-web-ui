@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header */
+button.dark_green {
+    background-color: rgba(47, 120, 117, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 51em 13px 47em;
+    border: none;
+    margin: 17px 0px 0px 0em;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 22px 3em 0px 3em;
+}
+
+.navigation_img {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_img img {
+    padding: 11px;
+}
+
+nav.header_nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 19px;
+}
+
+nav.header_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-1-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.header-1-img img {
+    width: 638px;
+    height: 510px;
+}
+
+.para-heading {
+    text-align: center;
+}
+
+.para-heading h1 {
+    font-size: 46px;
+}
+
+.para {
+    margin-top: 15px;
+    width: 341px;
+}
+
+@media screen and (max-width: 767px) {
+    nav.header_nav li {
+        display: none;
+    }
+
+    .top_header {
+        height: 29em;
+    }
+
+    button.dark_green {
+        padding: 12px 4em 12px 4em;
+        font-size: 14px;
+    }
+
+    .navigation-img-4 {
+        display: none;
+    }
+
+}
+
+/* header end */
+
+/* contact-customer */
+
+section.contact-customer {
+    background-image: url("images/Rectangle\ 163.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1903px;
+    height: 375px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 10em;
+    padding-top: 6em;
+}
+
+.contact-customer-box-1 {
+    width: 422px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.contact-customer-box-2 {
+    width: 422px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.contact-customer-box-3 {
+    width: 422px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+
+/* contact-customer end*/
+
+/* input-section */
+.container-2 {
+    text-align: center;
+    padding: 6em;
+}
+
+.container-2 h1 {
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.input-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input-two input[type="text"] {
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 15px 38px;
+    border-radius: 12px;
+    text-align: end;
+}
+
+.input-one input[type="text"] {
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 16px 20px 16px 26em;
+    border-radius: 12px;
+    text-align: end;
+    margin-top: 19px;
+}
+
+.input-column input[type="text"] {
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 20px 20px 6em 26em;
+    border-radius: 12px;
+    text-align: end;
+    margin-top: 19px;
+}
+
+.para-button {
+    text-align: center;
+    margin-top: -4em;
+    font-size: 13px;
+}
+
+.black-button {
+    padding: 15px 30px;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    margin-top: 23px;
+}
+
+/* input-section end*/
+
+/* contact-feature */
+.container-3 {
+    text-align: center;
+    background-image: url("images/Rectangle\ 174.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1860px;
+    height: 368px;
+    margin-left: 20px;
+}
+
+.heading-para-button {
+    margin-top: 3em;
+    padding-top: 8em;
+    color: white;
+}
+
+.heading-para-button h1 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.heading-para-button p {
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.two-buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+button.white-btn {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 15px 37px;
+}
+
+button.transparent-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 15px 15px 15px 13em;
+}
+
+/* contact-feature end*/
+
+
+/* footer */
+section.footer-container {
+    background-color: black;
+    margin-top: 3em;
+    padding-top: 5em;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.About.Penguin.Dojo {
+    font-size: 15px;
+    margin-left: 3em;
+    line-height: 40px;
+}
+
+.About.Penguin.Dojo h1 {
+    color: white;
+}
+
+.About.Penguin.Dojo nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.support {
+    font-size: 15px;
+    margin-left: 3em;
+    line-height: 40px;
+}
+
+.support h1 {
+    color: white;
+}
+
+.support nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.SHOP {
+    font-size: 15px;
+    margin-left: 3em;
+    line-height: 40px;
+}
+
+.SHOP h1 {
+    color: white;
+}
+
+.SHOP nav {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+section.footer-section-logo {
+    color: #fff;
+}
+
+.footer-section-design {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 5em;
+}
+
+.footer-section-design h3 {
+    font-size: 15px;
+    line-height: 69px;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+.footer-section-pragraph {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.5em;
+    margin-top: 1em;
+    align-items: end;
+}
+
+.footer-section-pragraph h1 {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.nav_end li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 29px;
+}
+
+.nav_end {
+    display: inline-block;
+}
+
+.footer-section-pragraph p {
+    font-size: 10px;
+    margin-top: 23px;
+}
+
+.footer-section-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16em;
+    margin-left: 27em;
+}
+
+@media screen and (max-width: 767px) {
+    section.footer-container {
+        margin-top: -1em;
+    }
+
+    .footer-section {
+        flex-direction: column-reverse;
+    }
+
+    .About.Penguin.Dojo {
+        line-height: 28px;
+        margin-right: -25em;
+        margin-top: 1em;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .support {
+        line-height: 28px;
+        margin-right: -25em;
+        margin-top: 1em;
+    }
+
+    .SHOP {
+        line-height: 28px;
+        margin-right: -25em;
+        margin-top: 1em;
+    }
+
+    .footer-section-end {
+        align-items: end;
+        margin-top: 5em;
+        margin-left: 0em;
+        flex-direction: column;
+        margin-right: 4em;
+    }
+}
+
+/* footer end*/
