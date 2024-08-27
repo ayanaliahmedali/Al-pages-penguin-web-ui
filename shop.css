@@ -187,7 +187,9 @@ section.Best-seller h1 {
     color: white;
     font-weight: 300;
 }
-
+.foot-btn {
+    text-align: center;
+}
 .shop-now {
     color: white;
     border-radius: 12px;
