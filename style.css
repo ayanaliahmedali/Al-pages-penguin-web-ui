@@ -23,15 +23,17 @@ a {
     background-size: cover;
 }
 
-button.dark_green {
+.dark_green {
     background-color: rgba(47, 120, 117, 1);
     color: rgba(255, 255, 255, 1);
-    border-radius: 12px;
+    border-radius: 7px;
     font-size: 16px;
     text-align: center;
-    padding: 13px 48em 13px 47em;
     border: none;
-    margin: 17px 0px 0px 1em;
+    width: 98%;
+    margin: 0px 12px;
+    padding: 1rem 0rem;
+    direction: rtl;
 }
 
 .navigation {
@@ -66,31 +68,36 @@ nav.header_nav a {
     align-items: end;
     flex-direction: column;
     padding-top: 22em;
-
+    padding-right: 4em;
 }
 
 .heading-1 h1 {
-    font-size: 44px;
+    font-size: 60px;
     color: white;
+    text-align: end;
 }
 
 .heading-1 p {
-    font-size: 19px;
+    font-size: 28px;
     color: white;
     line-height: 40px;
-    width: 24em;
-    padding-top: 12px;
-    padding-left: 14px;
-    text-align: end;
+    width: 633px;
+    height: 80px;
+    direction: rtl;
+    text-align: right;
+    font-weight: 500
 }
 
 button.login {
     color: black;
-    border-radius: 25px;
+    border-radius: 65.71px;
     border: none;
-    padding: 14px 2em 14px 2em;
     line-height: 21px;
     margin-top: 16px;
+    background-color: white;
+    font-size: 15.28px;
+    width: 152px;
+    height: 64.13px;
 }
 
 @media screen and (max-width: 767px) {
@@ -99,49 +106,71 @@ button.login {
     }
 
     .top_header {
-        height: 29em;
+        height: 28em;
+        background-position: left;
     }
 
-    button.dark_green {
-        padding: 12px 4em 12px 4em;
-        font-size: 14px;
+    .dark_green {
+        font-size: 13px;
+        width: 96%;
+        margin: 0px 8px;
     }
 
     .navigation-img-4 {
         display: none;
     }
 
-    .heading-1 {
-        padding-top: 3em;
-        padding-left: 8em;
+    .navigation {
+        margin: 1em 0em 0em 0em;
     }
+
+    .heading-1 {
+        padding-left: 8em;
+        padding-top: 3em;
+    }
+
+    .heading-1 h1 {
+        font-size: 30px;
+    }
+
+    .heading-1 p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav.header_nav li {
+        display: none;
+    }
+
+
 }
 
 /* header end */
 
 /* shop by category */
 
-section.shop_by_category h1 {
-    font-size: 47px;
+section.shop_by_category h2 {
+    font-size: 60px;
     text-align: center;
     margin: 1em 0px 1em 0px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .Shop_by_category_img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
+    margin: 3em;
 }
 
-.Shop_by_category_img img:hover{
+.Shop_by_category_img img:hover {
     transform: scale(1.1);
 }
 
 .Shop_by_category_img img {
-    padding: 6px;
     width: 24%;
     transition: transform 2s;
 }
@@ -217,7 +246,7 @@ nav.Activities_nav a {
     nav.Activities_nav {
         padding-left: 7em;
     }
-    
+
     img.img-1 {
         left: 14em;
     }
@@ -253,7 +282,7 @@ section.Best-seller h1 {
     transition: transform 2s;
 }
 
-.Best-seller-lazy-foot-img img:hover{
+.Best-seller-lazy-foot-img img:hover {
     transform: scale(1.1);
 }
 
@@ -489,7 +518,7 @@ h1.heading-2 {
     padding-bottom: 8em;
 }
 
-.articles-and-tips-img-1{
+.articles-and-tips-img-1 {
     margin-right: 25px;
 }
 
@@ -645,8 +674,9 @@ a.white-btn {
     align-items: center;
     float: right;
 }
+
 @media screen and (max-width: 767px) {
-    .articles-and-tips-4-img-flex{
+    .articles-and-tips-4-img-flex {
         flex-direction: column;
         gap: 25px;
     }
@@ -655,20 +685,21 @@ a.white-btn {
         flex-direction: column;
     }
 
-    .articles-and-tips-text-2{
-         margin-top: 28px;
+    .articles-and-tips-text-2 {
+        margin-top: 28px;
     }
 
-    .articles-and-tips-text-3{
+    .articles-and-tips-text-3 {
         margin-top: 28px;
-        
+
     }
 
-    .articles-and-tips-text-4{
+    .articles-and-tips-text-4 {
         margin-top: 28px;
-        
+
     }
 }
+
 /* articles and tips end*/
 
 /* articles and tips-img */
@@ -700,20 +731,21 @@ a.white-btn {
 .running-img img {
     width: 105%;
 }
-.our-mission_img-2 h1{
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 10px;
-  text-align: right;
-  color: white;
+
+.our-mission_img-2 h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: right;
+    color: white;
 }
 
-.our-mission_img-2 p{
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 4em;
-  text-align: right;
-  color: white;
+.our-mission_img-2 p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 4em;
+    text-align: right;
+    color: white;
 }
 
 .our-mission_img-1 {
@@ -750,7 +782,7 @@ button.footer_button img {
         display: none;
     }
 
-    .second-img img{
+    .second-img img {
         display: none;
     }
 
@@ -765,7 +797,7 @@ button.footer_button img {
 
     }
 
-    button.footer_button{
+    button.footer_button {
         left: 18em;
         bottom: 177px;
     }
@@ -786,6 +818,7 @@ button.footer_button img {
         margin-top: 0px;
     }
 }
+
 /* our mission end*/
 
 /* footer */
@@ -942,4 +975,5 @@ section.footer-section-logo {
         margin-right: 4em;
     }
 }
+
 /* footer end*/
