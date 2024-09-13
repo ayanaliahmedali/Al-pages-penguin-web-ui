@@ -266,8 +266,8 @@ img.img-2 {
 
 img.img-3 {
     z-index: -1;
-    margin-top: -17em;
-    left: 13em;
+    margin-top: -15em;
+    left: 15em;
     rotate: -5deg;
 }
 
@@ -291,6 +291,7 @@ nav.Activities_nav a {
         margin-top: 21em;
         flex-direction: column;
     }
+
     .Activities_img img {
         display: none;
     }
@@ -320,11 +321,15 @@ section.Best-seller h4 {
     width: 100%;
 }
 
+.Best-seller-heading-para-1 {
+    width: 25%;
+}
+
 .even_column {
     display: flex;
     align-items: center;
     margin: 6em 40px 0px 40px;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .Best-seller-lazy-foot-img {
@@ -333,8 +338,42 @@ section.Best-seller h4 {
     background-color: #f4f4f4;
 }
 
+.hover-btn {
+    opacity: 0;
+    transition: 1s;
+}
+
+.hover-btn button {
+    background-color: rgb(229, 57, 53);
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    width: 94%;
+    height: 48px;
+    margin-left: 12px;
+}
+
+.hover-btn:hover {
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
 .Best-seller-lazy-foot-img img {
     transition: transform 2s;
+    width: 100%;
 }
 
 .Best-seller-lazy-foot-img img:hover {
