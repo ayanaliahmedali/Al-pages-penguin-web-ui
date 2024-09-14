@@ -321,54 +321,25 @@ section.Best-seller h4 {
     width: 100%;
 }
 
-.Best-seller-heading-para-1 {
-    width: 25%;
-}
-
 .even_column {
     display: flex;
     align-items: center;
     margin: 6em 40px 0px 40px;
     gap: 30px;
+    justify-content: center;
+}
+
+.Best-seller-heading-para-1:hover .hover-btn {
+    transform: translateY(-50%);
 }
 
 .Best-seller-lazy-foot-img {
-    border-radius: 20px;
     height: 500px;
     background-color: #f4f4f4;
-}
-
-.hover-btn {
-    opacity: 0;
-    transition: 1s;
-}
-
-.hover-btn button {
-    background-color: rgb(229, 57, 53);
-    color: white;
-    font-weight: 500;
-    font-size: 1.4rem;
-    border-radius: 12px;
-    border: none;
-    text-align: center;
-    width: 94%;
-    height: 48px;
-    margin-left: 12px;
-}
-
-.hover-btn:hover {
-    opacity: 1;
-    transition: opacity .3s;
-}
-
-@keyframes show-data {
-    50% {
-        transform: translateY(-10rem);
-    }
-
-    100% {
-        transform: translateY(-7rem);
-    }
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 .Best-seller-lazy-foot-img img {
@@ -387,6 +358,23 @@ section.Best-seller h4 {
     font-size: 13px;
     margin-top: 2em;
     line-height: 29px;
+}
+
+.hover-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    background-color: rgb(255, 65, 54, 1.0);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    margin-left: 0.5em;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
@@ -408,16 +396,29 @@ section.Best-seller h4 {
 /* Best-seller end */
 
 /* features */
+.features-heading h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
 
 .features-heading {
     text-align: center;
-    font-size: 35px;
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
-.features-img {
-    text-align: center;
+.features-5-box {
     margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5em 8em;
+}
+
+.features-5-box h5 {
+    width: 99%;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 0.5em;
 }
 
 @media screen and (max-width: 767px) {
@@ -450,16 +451,11 @@ section.Best-seller h4 {
     left: 20em;
 }
 
-.opinions-container-1 h1 {
+.opinions-container-1 h2 {
     margin-left: 3em;
     margin-right: 0em;
     text-align: right;
-}
-
-.opinions-container-2 h1 {
-    margin-left: 3em;
-    margin-right: 0em;
-    text-align: right;
+    font-weight: 500;
 }
 
 .opinions-container-2 {
@@ -483,29 +479,31 @@ section.Best-seller h4 {
     background-repeat: no-repeat;
     height: 900px;
     border-radius: 12px;
-    margin-top: 6em;
-    width: 736px;
+    width: 738px;
 }
 
 .opinions-side-bar-img {
     background-image: url("images/Mask-group.svg");
     background-size: cover;
-    width: 900px;
-    height: 500px;
-
+    width: 1329px;
+    height: 689px;
 }
 
 .opinions-side_bar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 15em;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 126%;
+    margin-left: -2.7em;
 }
 
 .opinions-features {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: #fafafa;
+    margin-top: 10em;
 }
 
 .opinions-heading {
@@ -514,13 +512,15 @@ section.Best-seller h4 {
     flex-direction: column;
 }
 
-.opinions-heading p {
-    font-size: 10px;
+.opinions-heading h2 {
+    font-size: 60px;
+    line-height: 77.45px;
+    font-weight: 600;
+    direction: rtl;
 }
 
-.opinions-heading h1 {
-    font-size: 44px;
-    line-height: 50px;
+.opinions-heading p {
+    font-size: 13px;
 }
 
 .opinions-p-stars {
@@ -529,6 +529,8 @@ section.Best-seller h4 {
     align-items: end;
     flex-direction: column;
     line-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -570,10 +572,10 @@ section.Best-seller h4 {
 }
 
 .proudly_made_by_israel-img_para p {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 56px;
-    width: 66%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42.5px;
+    width: 820px;
     margin-top: 2em;
 }
 
