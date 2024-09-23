@@ -495,7 +495,7 @@ section.Best-seller h4 {
     justify-content: space-evenly;
     width: 100%;
     height: 126%;
-    margin-left: -2.7em;
+    margin-top: -5em;
 }
 
 .opinions-features {
@@ -523,14 +523,36 @@ section.Best-seller h4 {
     font-size: 13px;
 }
 
-.opinions-p-stars {
-    margin-top: 3em;
+.opinions-p-stars p {
+    margin-top: 2.5em;
     display: flex;
     align-items: end;
     flex-direction: column;
     line-height: 45px;
     font-size: 20px;
     font-weight: 500;
+}
+
+.opinions-para-stars p {
+    margin-top: 4em;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.five-stars {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    color: #2f7875;
+}
+
+.opinions-dots-img {
+    margin-left: 8em;
 }
 
 @media screen and (max-width: 767px) {
@@ -558,17 +580,23 @@ section.Best-seller h4 {
 /* opinions end */
 
 /* proudly made in isreal */
-
-.proudly_made_by_israel-img_para {
-    text-align: center;
-    margin-top: 8em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.proudly-made-by-ayan-ali-background-img {
+    background-size: cover;
+    background-image: url("images/Group\ 75.png");
+    height: 700px;
 }
 
-.proudly_made_by_israel-img_para img {
-    max-width: 100%;
+.proudly-made-by-ayan-ali-background-img h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+}
+
+.proudly_made_by_israel-img_para {
+    width: 50%;
+    margin: auto;
+
 }
 
 .proudly_made_by_israel-img_para p {
@@ -577,6 +605,8 @@ section.Best-seller h4 {
     line-height: 42.5px;
     width: 820px;
     margin-top: 2em;
+    color: black;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -650,12 +680,22 @@ h5.heading-2 {
     border-radius: 30px;
 }
 
-a.white-btn {
-    background: #E8E8E833;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem 1.8rem;
+.articles-and-tips-text a {
+    text-decoration: none;
+    color: white;
     border: 1px solid white;
+    background: #e8e8e833;
+    border-color: #fff;
+    padding: 1rem 2.8rem;
+    min-height: 4.1rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles-and-tips-text svg.right-arrow {
+    transform: rotate(180deg);
 }
 
 .articles-and-tips-text h5 {
@@ -713,65 +753,63 @@ a.white-btn {
 /*articles and tips-img end*/
 
 /* our mission */
-
 .our-mission_img-2 {
-    padding: 5px;
-    position: relative;
-    top: -141px;
-    left: -20px;
-}
-
-.running-img {
-    position: absolute;
-    left: 41em;
-    margin-top: -48.5em;
+    background-image: url("images/image 28.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    margin-top: -4.5em;
+    margin-left: -23em;
     z-index: -1;
+    width: 1550px;
 }
 
-.running-img img {
-    width: 105%;
+.btn-heading {
+    margin: 59% 5% 0% 55%;
 }
 
-.our-mission_img-2 h1 {
+.btn-heading h1,
+p {
+    color: white;
+    text-align: right;
+}
+
+.btn-heading h1 {
     font-size: 60px;
     font-weight: 600;
     line-height: 10px;
-    text-align: right;
-    color: white;
 }
 
-.our-mission_img-2 p {
+.btn-heading p {
     font-size: 28px;
     font-weight: 500;
     line-height: 4em;
-    text-align: right;
-    color: white;
 }
 
 .our-mission_img-1 {
     display: flex;
     gap: 10px;
-    padding: 13px;
-    margin-top: -550px;
-    align-items: flex-start;
     margin-top: 8em;
 }
 
 button.footer_button {
     display: flex;
     align-items: center;
-    position: relative;
-    left: 115em;
-    bottom: 35px;
-    border-radius: 43px;
-    padding: 6px 5px;
+    border-radius: 65.71px;
+    padding: 6px 12px;
     border: none;
     gap: 1.9rem;
+    margin-bottom: 1em;
+    margin-left: 53%;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 button.footer_button img {
     border-radius: 36px;
 }
+
+
 
 @media screen and (max-width: 767px) {
     .slider-img {
@@ -784,11 +822,6 @@ button.footer_button img {
 
     .second-img img {
         display: none;
-    }
-
-    .running-img img {
-        max-width: 100%;
-        margin-top: -5em;
     }
 
     .our-mission_img-2 {
@@ -812,11 +845,6 @@ button.footer_button img {
         font-size: 24px;
     }
 
-    .running-img {
-        position: relative;
-        left: 0;
-        margin-top: 0px;
-    }
 }
 
 /* our mission end*/
@@ -824,8 +852,8 @@ button.footer_button img {
 /* footer */
 section.footer-container {
     background-color: black;
-    margin-top: 3em;
-    padding-top: 5em;
+    padding-top: 4em;
+    height: 732px;
 }
 
 .footer-section {
@@ -834,20 +862,30 @@ section.footer-container {
     justify-content: space-between;
 }
 
+
+.three-navigation {
+    display: flex;
+    align-items: center;
+    gap: 11em;
+    text-align: end;
+    margin-left: 4em;
+}
+
+.three-navigation h1 {
+    color: white;
+    font-size: 28.71px;
+    font-weight: 600;
+}
+
+.three-navigation nav {
+    font-size: 16.75px;
+    font-weight: 300;
+}
+
 .About.Penguin.Dojo {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.About.Penguin.Dojo h1 {
-    color: white;
-}
-
-.About.Penguin.Dojo nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
 .support {
@@ -856,30 +894,10 @@ section.footer-container {
     line-height: 40px;
 }
 
-.support h1 {
-    color: white;
-}
-
-.support nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
 .SHOP {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.SHOP h1 {
-    color: white;
-}
-
-.SHOP nav {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
 }
 
 section.footer-section-logo {
@@ -887,31 +905,40 @@ section.footer-section-logo {
 }
 
 .footer-section-design {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    text-align: end;
     margin-right: 5em;
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 3em;
 }
 
-.footer-section-design h3 {
-    font-size: 15px;
-    line-height: 69px;
+.footer-section-design p {
+    width: 99%;
+    text-align: end;
+    font-size: 20px;
+    line-height: 50px;
+    color: #bdbdbd;
     margin-top: 25px;
     font-weight: 300;
 }
 
 .footer-section-pragraph {
-    display: flex;
-    flex-direction: column;
     margin-right: 4.5em;
     margin-top: 1em;
-    align-items: end;
+    text-align: end;
 }
 
 .footer-section-pragraph h1 {
     display: flex;
     align-items: center;
     gap: 17px;
+    font-size: 20.71px;
+    font-weight: 300;
+    justify-content: end;
+}
+
+.footer-section-pragraph p {
+    font-size: 14px;
+    margin-top: 23px;
 }
 
 .nav_end li {
@@ -924,11 +951,6 @@ section.footer-section-logo {
     display: inline-block;
 }
 
-.footer-section-pragraph p {
-    font-size: 10px;
-    margin-top: 23px;
-}
-
 .footer-section-end {
     display: flex;
     justify-content: space-around;
@@ -936,15 +958,10 @@ section.footer-section-logo {
     margin-top: 16em;
     margin-left: 27em;
 }
-
-.three-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 9em;
-    text-align: end;
+.two-footer-links{
+    font-size: 15px;
+    color: white;
 }
-
 @media screen and (max-width: 767px) {
     section.footer-container {
         margin-top: 3em;
