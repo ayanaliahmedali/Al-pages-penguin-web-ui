@@ -312,7 +312,7 @@ nav.Activities_nav a {
 
 /* Best-seller */
 
-section.Best-seller h4 {
+section.Best-seller h1 {
     font-size: 60px;
     text-align: center;
     margin: 7em 3em 1em 0px;
@@ -428,6 +428,12 @@ section.Best-seller h4 {
 
     .features-img img {
         max-width: 100%;
+    }
+
+    .features-5-box {
+        gap: 10px;
+        padding: 15px;
+        margin: 0em;
     }
 }
 
@@ -574,6 +580,7 @@ section.Best-seller h4 {
         top: 16em;
         left: 10px;
         width: 93%;
+        height: 35%;
     }
 }
 
@@ -584,19 +591,18 @@ section.Best-seller h4 {
     background-size: cover;
     background-image: url("images/Group\ 75.png");
     height: 700px;
-}
-
-.proudly-made-by-ayan-ali-background-img h2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.proudly-made-by-ayan-ali-background-img h2 {
     font-size: 60px;
 }
 
 .proudly_made_by_israel-img_para {
     width: 50%;
     margin: auto;
-
 }
 
 .proudly_made_by_israel-img_para p {
@@ -753,6 +759,45 @@ h5.heading-2 {
 /*articles and tips-img end*/
 
 /* our mission */
+section.our-mission {
+    padding: 0px 0px 0px 15px;
+}
+
+.first-img {
+    background-image: url("images/image\ 30.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+    height: 595px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.second-img {
+    background-image: url("images/image\ 29.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.our-mission h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+    color: white;
+    direction: rtl;
+    padding: 15px;
+}
+
 .our-mission_img-2 {
     background-image: url("images/image 28.svg");
     background-size: cover;
@@ -762,10 +807,6 @@ h5.heading-2 {
     margin-left: -23em;
     z-index: -1;
     width: 1550px;
-}
-
-.btn-heading {
-    margin: 59% 5% 0% 55%;
 }
 
 .btn-heading h1,
@@ -799,28 +840,29 @@ button.footer_button {
     padding: 6px 12px;
     border: none;
     gap: 1.9rem;
-    margin-bottom: 1em;
-    margin-left: 53%;
     font-size: 15px;
     font-weight: 500;
+    width: 210px;
+    height: 64px;
+    background-color: white;
+
 }
 
 button.footer_button img {
     border-radius: 36px;
+    width: 45px;
 }
-
-
 
 @media screen and (max-width: 767px) {
     .slider-img {
         width: 83%;
     }
 
-    .first-img img {
+    .first-img{
         display: none;
     }
 
-    .second-img img {
+    .second-img{
         display: none;
     }
 
@@ -944,24 +986,34 @@ section.footer-section-logo {
 .nav_end li {
     list-style-type: none;
     display: inline-block;
-    padding: 9px;
+    padding: 15px;
 }
 
 .nav_end {
     display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: -11em;
 }
 
 .footer-section-end {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 16em;
-    margin-left: 27em;
+    margin-top: 18em;
+    margin-left: 16em;
 }
-.two-footer-links{
+
+.two-footer-links {
     font-size: 15px;
     color: white;
+    width: 21.27px;
+    height: 21.27px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
 @media screen and (max-width: 767px) {
     section.footer-container {
         margin-top: 3em;
