@@ -16,15 +16,18 @@ a {
 }
 
 /* header */
-button.dark_green {
+
+.dark_green {
     background-color: rgba(47, 120, 117, 1);
     color: rgba(255, 255, 255, 1);
-    border-radius: 12px;
+    border-radius: 7px;
     font-size: 16px;
     text-align: center;
-    padding: 13px 48em 13px 47em;
     border: none;
-    margin: 17px 0px 0px 1em;
+    width: 98%;
+    margin: 12px 15px;
+    padding: 1rem 0rem;
+    direction: rtl;
 }
 
 .navigation {
@@ -108,13 +111,10 @@ nav.header_nav a {
         display: none;
     }
 
-    .top_header {
-        height: 29em;
-    }
-
     button.dark_green {
-        padding: 12px 4em 12px 4em;
+        padding: 12px 15em 12px 15em;
         font-size: 14px;
+        margin-left: 1em;
     }
 
     .navigation-img-4 {
@@ -143,6 +143,10 @@ nav.header_nav a {
         gap: 23px;
         left: 26em;
         top: 36em;
+    }
+
+    .navigation {
+        margin: 1em 0em 0em 0em;
     }
 }
 
@@ -783,6 +787,7 @@ button.footer_button {
 
 button.footer_button img {
     border-radius: 36px;
+    width: 45px;
 }
 
 @media screen and (max-width: 767px) {
@@ -826,36 +831,42 @@ button.footer_button img {
 /* Best-seller */
 
 section.Best-seller h1 {
-    font-size: 47px;
-    text-align: end;
-    margin: 3em 1em 1em 0px;
+    font-size: 60px;
+    text-align: center;
+    margin: 7em 3em 1em 0px;
     letter-spacing: 1px;
     font-weight: 300;
+    width: 100%;
 }
 
 .even_column {
     display: flex;
     align-items: center;
     margin: 6em 40px 0px 40px;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Best-seller-heading-para-1:hover .hover-btn {
+    transform: translateY(-50%);
 }
 
 .Best-seller-lazy-foot-img {
-    border-radius: 12px;
     height: 500px;
-    background-image: url("images/rectangle-6.svg");
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 .Best-seller-lazy-foot-img img {
     transition: transform 2s;
+    width: 100%;
 }
 
 .Best-seller-lazy-foot-img img:hover {
     transform: scale(1.1);
-}
-
-.Best-seller-heading-para-1 {
-    overflow: hidden;
 }
 
 .Best-seller-lazy-foot {
@@ -865,6 +876,23 @@ section.Best-seller h1 {
     font-size: 13px;
     margin-top: 2em;
     line-height: 29px;
+}
+
+.hover-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    background-color: rgb(255, 65, 54, 1.0);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    margin-left: 0.5em;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
@@ -888,8 +916,8 @@ section.Best-seller h1 {
 /* footer */
 section.footer-container {
     background-color: black;
-    margin-top: 5em;
-    padding-top: 5em;
+    padding-top: 4em;
+    height: 732px;
 }
 
 .footer-section {
@@ -898,20 +926,30 @@ section.footer-container {
     justify-content: space-between;
 }
 
+
+.three-navigation {
+    display: flex;
+    align-items: center;
+    gap: 11em;
+    text-align: end;
+    margin-left: 4em;
+}
+
+.three-navigation h1 {
+    color: white;
+    font-size: 28.71px;
+    font-weight: 600;
+}
+
+.three-navigation nav {
+    font-size: 16.75px;
+    font-weight: 300;
+}
+
 .About.Penguin.Dojo {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.About.Penguin.Dojo h1 {
-    color: white;
-}
-
-.About.Penguin.Dojo nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
 .support {
@@ -920,30 +958,10 @@ section.footer-container {
     line-height: 40px;
 }
 
-.support h1 {
-    color: white;
-}
-
-.support nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
 .SHOP {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.SHOP h1 {
-    color: white;
-}
-
-.SHOP nav {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
 }
 
 section.footer-section-logo {
@@ -951,59 +969,77 @@ section.footer-section-logo {
 }
 
 .footer-section-design {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    text-align: end;
     margin-right: 5em;
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 3em;
 }
 
-.footer-section-design h3 {
-    font-size: 15px;
-    line-height: 69px;
+.footer-section-design p {
+    width: 99%;
+    text-align: end;
+    font-size: 20px;
+    line-height: 50px;
+    color: #bdbdbd;
     margin-top: 25px;
     font-weight: 300;
 }
 
 .footer-section-pragraph {
-    display: flex;
-    flex-direction: column;
     margin-right: 4.5em;
     margin-top: 1em;
-    align-items: end;
+    text-align: end;
 }
 
 .footer-section-pragraph h1 {
     display: flex;
     align-items: center;
     gap: 17px;
+    font-size: 20.71px;
+    font-weight: 300;
+    justify-content: end;
+}
+
+.footer-section-pragraph p {
+    font-size: 14px;
+    margin-top: 23px;
 }
 
 .nav_end li {
     list-style-type: none;
     display: inline-block;
-    padding: 29px;
+    padding: 15px;
 }
 
 .nav_end {
     display: inline-block;
-}
-
-.footer-section-pragraph p {
-    font-size: 10px;
-    margin-top: 23px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: -11em;
 }
 
 .footer-section-end {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 16em;
-    margin-left: 27em;
+    margin-top: 18em;
+    margin-left: 16em;
+}
+
+.two-footer-links {
+    font-size: 15px;
+    color: white;
+    width: 21.27px;
+    height: 21.27px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width: 767px) {
     section.footer-container {
-        margin-top: -1em;
+        margin-top: 3em;
+        padding-left: 14em;
     }
 
     .footer-section {
@@ -1021,22 +1057,39 @@ section.footer-section-logo {
 
     .support {
         line-height: 28px;
-        margin-right: -25em;
-        margin-top: 1em;
+        margin-right: -21em;
+        margin-top: -7em;
     }
 
     .SHOP {
         line-height: 28px;
-        margin-right: -25em;
-        margin-top: 1em;
+        margin-right: -18em;
+        margin-top: -7em;
     }
 
     .footer-section-end {
         align-items: end;
-        margin-top: 5em;
-        margin-left: 0em;
         flex-direction: column;
-        margin-right: 4em;
+        margin: 3em 2em 0em 0em;
+    }
+
+    .three-navigation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-right: 5em;
+    }
+
+    section.footer-section-logo {
+        margin-left: -9em;
+    }
+
+    .footer-section-design {
+        margin-right: 0em;
+    }
+
+    .footer-section-pragraph {
+        margin-right: 0em;
     }
 }
 

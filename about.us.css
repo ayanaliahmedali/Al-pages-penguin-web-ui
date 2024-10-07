@@ -16,15 +16,17 @@ a {
 }
 
 /* header */
-button.dark_green {
+.dark_green {
     background-color: rgba(47, 120, 117, 1);
     color: rgba(255, 255, 255, 1);
-    border-radius: 12px;
+    border-radius: 7px;
     font-size: 16px;
     text-align: center;
-    padding: 13px 38em 13px 36em;
     border: none;
-    margin: 17px 0px 0px 0em;
+    width: 98%;
+    margin: 20px 15px;
+    padding: 1rem 0rem;
+    direction: rtl;
 }
 
 .navigation {
@@ -59,17 +61,18 @@ nav.header_nav a {
         display: none;
     }
 
-    .top_header {
-        height: 29em;
-    }
-
     button.dark_green {
-        padding: 12px 4em 12px 4em;
+        padding: 12px 15em 12px 15em;
         font-size: 14px;
+        margin-left: 1em;
     }
 
     .navigation-img-4 {
         display: none;
+    }
+
+    .navigation {
+        margin: 1em 0em 0em 0em;
     }
 
 }
@@ -77,68 +80,52 @@ nav.header_nav a {
 /* header end */
 
 /* section image heading and para */
-
-section.image-heading-and-para p {
-    width: 544px;
-    height: 144px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-section.image-heading-and-para h1 {
-    font-size: 48px;
-    font-weight: 500;
-    width: 554px;
-    height: 174px;
-}
-
 .container-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 10em;
-    margin-top: 3em;
+    margin: 3em 3em 0em 1em;
 }
 
 .container-1 img {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
 }
 
 .container-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3em 3em 0em 2em;
+    margin: 3em 1em 0em 2em;
 }
 
 .container-2 img {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
 }
 
 .container-3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3em 3em 0em 2em;
+    margin: 3em 6em 0em 1em;
 }
 
 .container-3 img {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
 }
 
 .container-4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3em 3em 0em 2em;
+    margin: 3em 1em 0em 2em;
 }
 
 .container-4 img {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
 }
 
 .heading-paragraph {
@@ -157,17 +144,76 @@ p.para-3 {
     margin-top: 40px;
 }
 
-/* section image heading and para end*/
-.last-heading h1 {
+.heading-paragraph h2 {
+    font-size: 48px;
     font-weight: 500;
-    font-size: 64px;
-    height: 154px;
-    width: 1158px;
-    text-align: center;
-    margin: 2em 0em 2em 2em;
 }
 
+.heading-paragraph p {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(103, 103, 103, 1);
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin: 2em 7em 0em 7em;
+    direction: rtl;
+}
+
+@media screen and (max-width: 767px) {
+    .container-1 {
+        flex-direction: column;
+        margin: 2em 1em;
+    }
+
+    .container-1 img {
+        width: 100%;
+        height: 100%;
+        margin: 0px 3em 0px 3em;
+    }
+
+    .heading-paragraph h2 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .heading-paragraph p {
+        width: 98%;
+        font-size: 20px;
+        margin: 2em 0em 0em 0em;
+    }
+
+    .container-2 {
+        flex-direction: column-reverse;
+        margin: 2em 1em;
+    }
+
+    .container-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin: 0px 3em 0px 3em;
+    }
+
+    .container-3 {
+        flex-direction: column;
+        margin: 0em 1em;
+    }
+
+    .container-4 {
+        flex-direction: column-reverse;
+        margin: 2em 1em;
+    }
+}
+
+/* section image heading and para end*/
+
 /* contact-feature */
+section.contact-feature {
+    padding: 20px;
+}
+
 .container-5 {
     text-align: center;
     background-image: url("images/Rectangle\ 174.svg");
@@ -219,14 +265,25 @@ button.transparent-btn {
     padding: 15px 15px 15px 13em;
 }
 
+@media screen and (max-width: 767px) {
+    .two-buttons {
+        display: none;
+    }
+
+    .heading-para-button {
+        padding-top: 13em;
+        margin: 3em 0em;
+    }
+}
+
 /* contact-feature end*/
 
 
 /* footer */
 section.footer-container {
     background-color: black;
-    margin-top: 3em;
-    padding-top: 5em;
+    padding-top: 4em;
+    height: 732px;
 }
 
 .footer-section {
@@ -235,20 +292,30 @@ section.footer-container {
     justify-content: space-between;
 }
 
+
+.three-navigation {
+    display: flex;
+    align-items: center;
+    gap: 11em;
+    text-align: end;
+    margin-left: 4em;
+}
+
+.three-navigation h1 {
+    color: white;
+    font-size: 28.71px;
+    font-weight: 600;
+}
+
+.three-navigation nav {
+    font-size: 16.75px;
+    font-weight: 300;
+}
+
 .About.Penguin.Dojo {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.About.Penguin.Dojo h1 {
-    color: white;
-}
-
-.About.Penguin.Dojo nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
 .support {
@@ -257,30 +324,10 @@ section.footer-container {
     line-height: 40px;
 }
 
-.support h1 {
-    color: white;
-}
-
-.support nav {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
 .SHOP {
     font-size: 15px;
     margin-left: 3em;
     line-height: 40px;
-}
-
-.SHOP h1 {
-    color: white;
-}
-
-.SHOP nav {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
 }
 
 section.footer-section-logo {
@@ -288,59 +335,77 @@ section.footer-section-logo {
 }
 
 .footer-section-design {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    text-align: end;
     margin-right: 5em;
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 3em;
 }
 
-.footer-section-design h3 {
-    font-size: 15px;
-    line-height: 69px;
+.footer-section-design p {
+    width: 99%;
+    text-align: end;
+    font-size: 20px;
+    line-height: 50px;
+    color: #bdbdbd;
     margin-top: 25px;
     font-weight: 300;
 }
 
 .footer-section-pragraph {
-    display: flex;
-    flex-direction: column;
     margin-right: 4.5em;
     margin-top: 1em;
-    align-items: end;
+    text-align: end;
 }
 
 .footer-section-pragraph h1 {
     display: flex;
     align-items: center;
     gap: 17px;
+    font-size: 20.71px;
+    font-weight: 300;
+    justify-content: end;
+}
+
+.footer-section-pragraph p {
+    font-size: 14px;
+    margin-top: 23px;
 }
 
 .nav_end li {
     list-style-type: none;
     display: inline-block;
-    padding: 29px;
+    padding: 15px;
 }
 
 .nav_end {
     display: inline-block;
-}
-
-.footer-section-pragraph p {
-    font-size: 10px;
-    margin-top: 23px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: -11em;
 }
 
 .footer-section-end {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 16em;
-    margin-left: 27em;
+    margin-top: 18em;
+    margin-left: 16em;
+}
+
+.two-footer-links {
+    font-size: 15px;
+    color: white;
+    width: 21.27px;
+    height: 21.27px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width: 767px) {
     section.footer-container {
-        margin-top: -1em;
+        margin-top: 3em;
+        padding-left: 14em;
     }
 
     .footer-section {
@@ -358,22 +423,39 @@ section.footer-section-logo {
 
     .support {
         line-height: 28px;
-        margin-right: -25em;
-        margin-top: 1em;
+        margin-right: -21em;
+        margin-top: -7em;
     }
 
     .SHOP {
         line-height: 28px;
-        margin-right: -25em;
-        margin-top: 1em;
+        margin-right: -18em;
+        margin-top: -7em;
     }
 
     .footer-section-end {
         align-items: end;
-        margin-top: 5em;
-        margin-left: 0em;
         flex-direction: column;
-        margin-right: 4em;
+        margin: 3em 2em 0em 0em;
+    }
+
+    .three-navigation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-right: 5em;
+    }
+
+    section.footer-section-logo {
+        margin-left: -9em;
+    }
+
+    .footer-section-design {
+        margin-right: 0em;
+    }
+
+    .footer-section-pragraph {
+        margin-right: 0em;
     }
 }
 
