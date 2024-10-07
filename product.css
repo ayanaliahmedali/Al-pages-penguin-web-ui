@@ -833,7 +833,6 @@ button.footer_button img {
 section.Best-seller h1 {
     font-size: 60px;
     text-align: center;
-    margin: 7em 3em 1em 0px;
     letter-spacing: 1px;
     font-weight: 300;
     width: 100%;
@@ -842,7 +841,7 @@ section.Best-seller h1 {
 .even_column {
     display: flex;
     align-items: center;
-    margin: 6em 40px 0px 40px;
+    margin: 6em 40px 6em 40px;
     gap: 30px;
     justify-content: center;
 }

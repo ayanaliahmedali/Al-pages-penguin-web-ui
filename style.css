@@ -799,7 +799,7 @@ section.our-mission {
 }
 
 .our-mission_img-2 {
-    background-image: url("images/image 28.svg");
+    background-image: url("images/image\ 28.svg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 900px;

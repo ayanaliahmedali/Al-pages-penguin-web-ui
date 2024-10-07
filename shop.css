@@ -56,24 +56,6 @@ nav.header_nav a {
     color: black;
 }
 
-.header-1-img {
-    background-image: url("images/Rectangle 110.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1879px;
-    height: 380px;
-    margin: 1em .5em;
-}
-
-.header-1-img h1 {
-    color: white;
-    font-size: 96px;
-    font-weight: 300;
-    padding-right: 30px;
-    padding-top: 1em;
-    text-align: end;
-}
-
 @media screen and (max-width: 767px) {
     nav.header_nav li {
         display: none;
